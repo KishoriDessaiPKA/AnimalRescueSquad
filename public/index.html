@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Animal Rescue Squad</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<!-- When offline use this links -->
+ <script src="mainFiles/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-route.min.js"></script>
+ <script src="app.js"></script>
+ <script src="jQueryScript.js"></script>
+  <script src="mainFiles/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="mainFiles/bootstrap.min.css">
+  <link rel="stylesheet" href="mainFiles/font-awesome.min.css">
+  <link rel="stylesheet" href="app.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.2.4/ui-bootstrap-tpls.js"></script>
+  <script src="app.js"></script>
+
+  <!-- link rel="stylesheet" href="css/font-awesome.min.css">
+   
+  <script src="mainFiles/angular.min.js"></script -->
+  
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div id='mainContent'>
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid header">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" id="logoHeader" style="padding: 0px;">
+      <img src='images/main/arsLogo.png' alt='img' width="240">
+      </a>
+      </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="headerTxt">
+        <a>Goa's Wildlife
+        <b class='caret'></b>
+        <ul style="display: none;" class='subMenu'> 
+           <li><a href="#wildGoa">Wild Goa</a></li> 
+           <li><a href="#wildlife">Goa's Wildlife</a></li>
+           <li><a href="#speciesInThreat">Species in Threat</a></li>  </ul>
+        </a></li>
+        <li class="headerTxt">
+        <a>Activities
+        <b class='caret'></b>
+        <ul style="display: none;" class='subMenu'> 
+        <li><a href="#raids">Raids</a></li>
+         <li><a href="#firstAid">First Aid</a></li>
+         <li><a href="#rescueOperations">Animal Rescue</a></li>        
+         <li><a href="#individualRole">Individual Role</a></li>
+          <li><a href="#trainingCamp">Training Camp</a></li>  </ul>
+        </a></li>
+        <li class="headerTxt">
+        <a>Fauna in Goa
+        <b class='caret'></b>
+        <ul style="display: none;" class='subMenu'>
+         <li><a href="#birds">Birds of Goa</a></li>
+         <li><a href="#reptiles">Reptiles of Goa</a></li> 
+         <li><a href="#mammals">Mammals of Goa</a></li>
+         <li><a href="#amphibians">Amphibians of Goa</a></li> 
+         </ul>
+        </a></li>
+        <li class="headerTxt">
+        <a>About Us
+        <b class='caret'></b>
+        <ul style="display: none;" class='subMenu'> 
+        <li><a href="#ourSuccess">Our Success</a></li> 
+        <li><a href="#news">News Articles</a></li> <li><a href="#videos">Videos</a></li>
+        <li><a href="#contactUs">Contact Us</a></li>  </ul>
+        </a></li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+<div id='imgSlider' style="height: 250px; background: silver; position: absolute; top:72px; z-index: 10;">
+	<div ng-controller="CarouselDemoCtrl" id="slides_control">
+        <div>
+            <uib-carousel interval="myInterval" active="activeSlide" class='fading'>
+                <uib-slide ng-repeat="slide in slides" index="$index">
+                    <img ng-src="{{slide.image}}" style="margin:auto; height: 100%; width: 100%;">                    
+                </uib-slide>
+            </uib-carousel>
+        </div>
+    </div>
+</div>
+<!-- custom content holder -->  
+ <div class='pageContent'>
+  <div ng-view></div>
+ </div> 
+  
+</div>
+</body>
+</html>

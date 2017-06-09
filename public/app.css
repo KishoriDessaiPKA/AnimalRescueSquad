@@ -1,0 +1,242 @@
+ #social:hover{
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+#social{
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+.circle{
+  border-radius: 50%;
+  margin: 0.2em;
+  font-size: 3em;
+}
+
+.social-fb{
+  background: #3B5998;
+  color: #FFFFFF;
+    padding: 0.25em 0.45em;
+}
+
+.social-ln{
+  background: #4099FF;
+  color: #FFFFFF;
+    padding: 0.25em 0.25em;
+}
+
+.social-cl{
+  background: #1abc9c;
+  color: #FFFFFF;
+    padding: 0.25em 0.25em;
+}
+
+.social-em{
+  background: #d34836;
+  color: #FFFFFF;
+    padding: 0.25em 0.25em;
+}
+
+.social-pn{
+  background: #d34836;
+  color: #FFFFFF;
+    padding: 0.25em 0.4em;
+}
+
+ .navbar {
+      margin-bottom: 0;
+      border: none;
+      position: fixed;
+      height: 72px; z-index: 12; top:0px;
+    }
+
+  .navbar, .subMenu{
+    background-image: url("images/main/header.jpg");
+  }
+    
+    .headerTxt{
+      font-size: 18px;
+      font-family: serif;
+      padding: 12px 0px;
+      color: lightgrey !important;
+      cursor: pointer;
+    }
+
+     .subMenu li{
+      padding: 5px 12px;
+      margin-left: -25px;
+     }
+    .subMenu li a{
+      color: aliceblue;
+
+    }
+     
+     .subMenu li a:hover{
+        color: darkseagreen;
+     }
+    
+   .pageHeader, .subHeader{
+font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #999900;
+    margin: auto;
+    margin-bottom: 12px;
+   }
+
+   .subHeader{
+    font-size: 16px; color: darkslategrey; 
+   }
+
+
+   .navbar-inverse .navbar-nav>li>a{
+      color: white;
+   }
+   .navbar-inverse .navbar-nav>li>a:hover{
+      color: lightgrey;
+   }
+   body{
+    background-image: url("images/main/forest.jpg");
+    background-attachment: fixed;
+    background-size: contain; 
+        font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #003300; 
+    line-height: 21px; 
+  }
+  
+  #linkHome{
+    position: fixed;
+    top:0px; width: 320px; height: 361px;
+  }
+   .navbar-header{
+    background: transparent !important;
+   }
+
+#slides_control div{
+  height: 250px !important;
+}
+
+ .pageContent{
+ 	width:100%; min-height: 320px; background: #E3ECD1; position: relative; top:322px; padding: 0px 30px;
+ }
+
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+ @media (max-width: 767px) {
+     #mainContent, #imgSlider{
+    background: transparent;
+    width: 100%;
+    margin: auto;
+   }
+    .navbar{
+    width: 100%;
+  }
+   .navbar-header button{
+    z-index: 12;
+   }
+   .navbar-brand{
+    position: fixed;
+  }
+  .subMenu{
+      list-style: none; position: relative;
+    }
+    ul.navbar-nav{
+    position: relative;
+    z-index: 12; background-image: url("images/main/header.jpg");
+   }
+    .headerTxt{
+      font-size: 20px;
+      font-family: serif;
+      padding: 12px 0px;
+      color: lightgrey !important;
+    }
+ }
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (min-width: 768px) and (max-width: 991px) {
+     #mainContent, #imgSlider{
+    background: purple;
+    width: 94%;
+    margin: auto;
+   }
+   .navbar{
+    width: 94%;
+  }
+  .navbar-header{
+    margin-right: 0px;
+  }
+  .navbar-brand{
+    position: relative;
+  }
+  .subMenu{
+      list-style: none; position: relative;
+    }
+   
+    .headerTxt{
+      font-size: 18px;
+      font-family: serif;
+      padding: 24px 0px;
+      color: lightgrey !important;
+    }
+    .nav>li>a{
+      padding: 10px 8px;
+    }
+   
+  }
+     /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (min-width: 992px) {
+   #mainContent, #imgSlider{
+    width: 86%;
+    margin: auto;
+   }
+  .navbar{
+    width: 86%;
+  }
+  .navbar-brand{
+    position: relative;
+  }
+  .subMenu{
+      list-style: none; position: fixed; top:64px;
+    }
+    .headerTxt{
+      font-size: 19px;
+      font-family: serif;
+      padding: 24px 5px;
+      color: lightgrey !important;
+    }
+
+  }
+
+.carousel.fading .carousel-inner > .item {
+  /* Override the properties for the default sliding carousel */
+  display: block;
+  position: absolute;
+  left: 0 !important;
+  width: 100%;
+  height: 100%;
+
+  /* Hide slides by default */
+  opacity: 0;
+
+  /* Set transition to opactity */
+  -moz-transition: .6s ease-in-out opacity;
+  -webkit-transition: .6s ease-in-out opacity;
+  -o-transition: .6s ease-in-out opacity;
+  transition: .6s ease-in-out opacity;
+}
+
+/* Active slides are visible on transition end */
+.carousel.fading .carousel-inner > .active,
+/* Next slide is visible during transition */
+.carousel.fading .carousel-inner > .next.left {
+    opacity: 1;
+}
+.carousel.fading .carousel-inner > .next,
+.carousel.fading .carousel-inner > .active.left {
+    opacity: 0;
+}
